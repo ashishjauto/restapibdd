@@ -1,1 +1,3 @@
-test
+gradle follows folder structure for cucumber
+
+features should be in resource folder

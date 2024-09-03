@@ -10,17 +10,19 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.cucumber:cucumber-java:7.11.2'
-    implementation 'io.cucumber:cucumber-core:7.11.2'
-    implementation 'io.cucumber:cucumber-junit:7.11.2'
+
+
+    implementation 'io.cucumber:cucumber-java:7.18.1'
+    implementation 'io.cucumber:cucumber-core:7.18.1'
+    implementation 'io.cucumber:cucumber-gherkin-messages:7.18.1'
+    implementation 'io.cucumber:cucumber-gherkin:7.18.1'
+    implementation 'io.cucumber:cucumber-plugin:7.18.1'
+    testImplementation 'io.cucumber:cucumber-junit:7.18.1'
+
     implementation 'io.rest-assured:rest-assured:5.3.0'
 
     implementation  ( "com.relevantcodes:extentreports:2.41.1")
 
 
 
-}
-
-test {
-    useJUnitPlatform()
 }
