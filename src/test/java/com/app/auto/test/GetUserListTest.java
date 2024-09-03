@@ -8,20 +8,25 @@ public class GetUserListTest {
 
 
 
-    @Given("i have urn for the application")
-    public void i_have_urn_for_the_application() {
+    @Given("When i request for list of users through urn")
+    public void tc1_GetUserListTest() {
         System.out.println("URN application");
     }
-    @When("i send get request using urn")
-    public void i_send_get_request_using_urn() {
+    @When("request for user list request using urn")
+    public void tc2_GetUserListTest() {
         System.out.println("Send Request");
     }
     @Then("user list is return")
-    public void user_list_is_return() {
+    public void tc3_GetUserListTest() {
         System.out.println("Response");
     }
     @Then("data should be in json format")
     public void data_should_be_in_json_format() {
+        System.out.println("Json Data Validation");
+    }
+
+    @Then("info code should be 201")
+    public void tc4_GetUserListTest() {
         System.out.println("Json Data Validation");
     }
 
