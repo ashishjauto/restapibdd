@@ -1,4 +1,4 @@
-package com.app.auto.test;
+package com.app.auto.test.get;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
