@@ -8,7 +8,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
-
+import org.json.JSONObject;
+import org.junit.Assert;
 
 
 public class PetStorePostUserTest {
@@ -19,21 +20,21 @@ public class PetStorePostUserTest {
 
 
     @Given("Post URN access endpoints")
-    public void i_have_urn_for_the_application() {
-
+    public void tc1_PostUser() {
       response= PetStoreUserEndPoint.petUserCreation(petStoreUserSimulateUser.userCreation());
 
 
     }
-    @When("i send POST request using urn")
-    public void i_send_post_request_using_urn() {
-        // Write code here that turns the phrase above into concrete actions
-        System.out.println(response.getBody());
-    }
     @Then("user success message  return")
-    public void user_success_message_return() {
-        // Write code here that turns the phrase above into concrete actions
-        System.out.println("tst");
+    public void tc2_validateStatusCode() {
+        Assert.assertEquals(response.getStatusCode(),200);
+
+    }
+    @Then("data should be in json format")
+    public void tc3_validate_Body() {
+    Assert.assertTrue(response.getContentType().contains("application/json"));
+
+
     }
 
 }
