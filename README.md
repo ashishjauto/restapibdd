@@ -1,6 +1,9 @@
 # restapibdd
-rest demo with BDD
+restApi Automation demo with BDD
 
-Demo Application reqres.in
+Demo Application  https://petstore.swagger.io/#/
+
+
+
 
  

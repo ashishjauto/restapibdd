@@ -35,7 +35,7 @@ public class PetStoreGetUserTest {
         PetStoreUserEndPoint.petUserCreation(user);
 
         response= PetStoreUserEndPoint.petUserGetDetails_byUsername(user.getUserName());
- 
+
 
 
     }
