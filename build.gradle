@@ -17,11 +17,16 @@ dependencies {
     implementation 'io.cucumber:cucumber-gherkin-messages:7.18.1'
     implementation 'io.cucumber:cucumber-gherkin:7.18.1'
     implementation 'io.cucumber:cucumber-plugin:7.18.1'
+
     testImplementation 'io.cucumber:cucumber-junit:7.18.1'
 
     testImplementation 'io.rest-assured:rest-assured:5.5.0'
 
     implementation 'org.json:json:20240303'
+    implementation 'com.github.javafaker:javafaker:1.0.2'
+
+
+
 
 
 }

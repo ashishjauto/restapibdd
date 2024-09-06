@@ -4,16 +4,10 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.equalTo;
-
 
 import io.restassured.RestAssured;
-import io.restassured.RestAssured.*;
-import io.restassured.matcher.RestAssuredMatchers.*;
-import org.hamcrest.Matcher.*;
 
-public class GetSingleUserTest {
+public class PetStoreUserTest {
 
     RestAssured getSingleUserTest;
 
@@ -22,9 +16,9 @@ public class GetSingleUserTest {
 
         getSingleUserTest.given()
                     .when()
-                            .get("https://reqres.in/api/users?page=2")
+                            .get("https://petstore.swagger.io/v2/pet/1")
                                     .then().statusCode(200)
-                        .body("page",equalTo(2))
+
                                 .log().all();
 
     }
