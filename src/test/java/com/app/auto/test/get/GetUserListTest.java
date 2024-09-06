@@ -20,10 +20,6 @@ public class GetUserListTest {
     public void tc3_GetUserListTest() {
         System.out.println("Response");
     }
-    @Then("data should be in json format")
-    public void data_should_be_in_json_format() {
-        System.out.println("Json Data Validation");
-    }
 
     @Then("info code should be 201")
     public void tc4_GetUserListTest() {
