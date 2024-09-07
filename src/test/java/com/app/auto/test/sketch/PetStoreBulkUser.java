@@ -1,12 +1,10 @@
-package com.app.auto.test.junk;
+package com.app.auto.test.sketch;
 
 import com.app.auto.payload.PetStoreUser;
 import com.app.auto.utilities.BulkPetStoreUser;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 import java.util.function.Consumer;
 
 public class PetStoreBulkUser {
